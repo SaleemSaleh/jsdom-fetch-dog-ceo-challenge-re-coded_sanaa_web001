@@ -11,8 +11,16 @@ function fetchT(url,fuction){
 
 }
 
- fetchT(imgUrl,renderBooks);
+ fetchT(imgUrl,renderimages);
 
+  function renderimages(images) {
+  const div = document.querySelector('#dog-image-container')
+
+  for (const element of images) {
+      let img = document.createElement('img');
+      img.src = element;
+      div.appendChild(img);
+  }
 
   function renderBooks(images) {
   const div = document.querySelector('#dog-image-container')
