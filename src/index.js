@@ -8,7 +8,7 @@ function fetchT(url,fuction){
   fetch(url)
     .then(resp => resp.json())
     .then(json => fuction(json));
-  
+
 }
 
  fetchT(imgUrl,renderBooks);
