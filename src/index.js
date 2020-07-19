@@ -12,6 +12,7 @@ function fetchT(url,fuction){
 }
 
  fetchT(imgUrl,renderimages);
+ fetchT(breedUrl,renderBreed);
 
   function renderimages(images) {
   const div = document.querySelector('#dog-image-container')
@@ -22,7 +23,7 @@ function fetchT(url,fuction){
       div.appendChild(img);
   }
 
-  function renderBooks(breeds) {
+  function renderBreed(breeds) {
   const ul = document.querySelector('#og-breeds')
 
   for (const key in breeds) {
