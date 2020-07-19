@@ -29,5 +29,8 @@ function fetchT(url,fuction){
   for (const key in breeds) {
       let li = document.createElement('li');
       li.innerHTML = key;
+      li.addEventListener("click", (e) => {
+        li.style.fontColor = "#777";
+      })
       div.appendChild(li);
   }
