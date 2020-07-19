@@ -22,11 +22,11 @@ function fetchT(url,fuction){
       div.appendChild(img);
   }
 
-  function renderBooks(images) {
-  const div = document.querySelector('#dog-image-container')
+  function renderBooks(breeds) {
+  const ul = document.querySelector('#og-breeds')
 
-  for (const element of images) {
-      let img = document.createElement('img');
-      img.src = element;
-      div.appendChild(img);
+  for (const key in breeds) {
+      let li = document.createElement('li');
+      li.innerHTML = key;
+      div.appendChild(li);
   }
